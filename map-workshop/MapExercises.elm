@@ -1,5 +1,7 @@
 module MapExercises exposing (..)
 
+-- NB: Each function has a default value so the program compiles
+-- Fill these in with your new implementation to make the tests pass
 {--LISTS --}
 -- double the items in the list
 
