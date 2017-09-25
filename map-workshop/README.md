@@ -23,3 +23,8 @@ If you get really stuck the solutions are in `Solutions.elm` but try not to look
 2. Run `elm package install` in this directory
 3. Run `elm package install` in the `tests` directory
 4. To run the tests cd into this directory and run the command `elm-test`
+
+
+## Resources
+
+Some handy reading :wink: :https://medium.com/@andrewMacmurray/the-meaning-of-map-in-elm-6480afc8139d
