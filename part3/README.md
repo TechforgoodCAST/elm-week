@@ -14,7 +14,7 @@
 
 How an Elm app fits together
 
-+ Frontend masters section on TEA - https://frontendmasters.com/courses/elm/the-elm-architecture/
++ Frontend masters section on The Elm Architecture (TEA) - https://frontendmasters.com/courses/elm/the-elm-architecture/
 + Read through the page on the elm-lang guide - https://guide.elm-lang.org/architecture/
 + Work through first 3 User input exercises (up to `Form`) - https://guide.elm-lang.org/architecture/user_input/
 
