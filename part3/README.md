@@ -24,4 +24,9 @@ How an Elm app fits together
 + Read types section on elm-lang guide - https://guide.elm-lang.org/types/
 + Error handling (Maybe and Result) - https://guide.elm-lang.org/error_handling/
 + Video on Union Types - https://frontendmasters.com/courses/elm/union-types
-+ Map workshop
++ `Map workshop`
+
+
+## A short exercise to tie it all together
+
+`mini-todo-workshop` - Implement a todo app based on the first example in the union types section
