@@ -7,7 +7,7 @@
 
 ## Short exercise writing Html in Elm
 
-+ Work through exercise in `html workshop`
++ Work through exercise in [html workshop](https://github.com/TechforgoodCAST/elm-week/tree/master/part3/html-workshop)
 
 
 ## The Elm Architecture
@@ -24,9 +24,9 @@ How an Elm app fits together
 + Read types section on elm-lang guide - https://guide.elm-lang.org/types/
 + Error handling (Maybe and Result) - https://guide.elm-lang.org/error_handling/
 + Video on Union Types - https://frontendmasters.com/courses/elm/union-types
-+ `Map workshop`
++ [Map workshop](https://github.com/TechforgoodCAST/elm-week/tree/master/part3/map-workshop)
 
 
 ## A short exercise to tie it all together
 
-`mini-todo-workshop` - Implement a todo app based on the first example in the union types section
+[mini-todos-workshop](https://github.com/TechforgoodCAST/elm-week/tree/master/part3/mini-todos-workshop) - Implement a todo app based on the first example in the union types section
