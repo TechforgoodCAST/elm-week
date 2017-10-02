@@ -1,19 +1,19 @@
-module DeeplyNested exposing (..)
+module TodoPipeline exposing (..)
 
 import Html exposing (..)
-import SampleJson exposing (deeplyNestedString)
+import SampleJson exposing (todosString)
+
+
+type alias Todo =
+    { task : String
+    , completed : Bool
+    , urgent : Bool
+    }
 
 
 main : Html msg
 main =
     text "render your solution here"
-
-
-type alias RescuedData =
-    { saved1 : String
-    , saved2 : String
-    , savedList : List Int
-    }
 
 
 
@@ -22,7 +22,7 @@ type alias RescuedData =
 
   main might look something like:
 
-    main = text <| toString <| decodeString rescueDecoder todoString
+    main = text <| toString <| decodeString todosDecoder todoString
 
   You don't normally need to do the decodeString step however (Http handles this bit for you)
 --}

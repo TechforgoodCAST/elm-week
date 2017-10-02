@@ -13,6 +13,12 @@ Elm week at Founders &amp; Coders
 + Html docs - http://package.elm-lang.org/packages/elm-lang/html/latest
 
 
+## Tools
+
++ Online Elm Repl - http://elmrepl.cuberoot.in/
++ Online Elm Program Viewer - https://ellie-app.com/new
+
+
 ## Useful Resources
 
 + Cheat sheet - https://www.elm-tutorial.org/en/

@@ -1,19 +1,19 @@
-module DeeplyNested exposing (..)
+module Guardian exposing (..)
 
 import Html exposing (..)
-import SampleJson exposing (deeplyNestedString)
+import SampleJson exposing (guardianApiString)
+
+
+type alias Article =
+    { title : String
+    , section : String
+    , url : String
+    }
 
 
 main : Html msg
 main =
     text "render your solution here"
-
-
-type alias RescuedData =
-    { saved1 : String
-    , saved2 : String
-    , savedList : List Int
-    }
 
 
 
@@ -22,7 +22,7 @@ type alias RescuedData =
 
   main might look something like:
 
-    main = text <| toString <| decodeString rescueDecoder todoString
+    main = text <| toString <| decodeString articlesDecoder todoString
 
   You don't normally need to do the decodeString step however (Http handles this bit for you)
 --}
