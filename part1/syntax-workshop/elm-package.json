@@ -1,11 +1,10 @@
 {
     "version": "1.0.0",
-    "summary": "Like GitHub, but for Elm stuff.",
-    "repository": "https://github.com/rtfeldman/elm-workshop.git",
+    "summary": "Exercises for learning Elm syntax",
+    "repository": "https://github.com/TechforgoodCAST/elm-week.git",
     "license": "BSD-3-Clause",
     "source-directories": [
-        ".",
-        ".."
+        "."
     ],
     "exposed-modules": [],
     "dependencies": {
