@@ -1,20 +1,9 @@
-port module Main exposing (..)
+module Main exposing (..)
 
 import Expect
 import Fuzz exposing (..)
-import Json.Encode exposing (Value)
 import MapExercises exposing (..)
 import Test exposing (..)
-import Test.Runner.Node exposing (TestProgram, run)
-
-
-allTests : Test
-allTests =
-    describe "All Tests"
-        [ listTests
-        , maybeTests
-        , resultTests
-        ]
 
 
 listTests : Test
@@ -73,7 +62,7 @@ maybeTests =
                     Expect.equal
                         (headOfTheList xs)
                         (List.head xs)
-            , fuzz (list (maybe int)) "gets the head of the list" <|
+            , fuzz (list (maybe int)) "gets the head of the list pt. II" <|
                 \xs ->
                     Expect.equal
                         (headOfTheList xs)
@@ -117,7 +106,7 @@ maybeTests =
                     Expect.equal
                         (addMaybes Nothing (Just 800))
                         Nothing
-            , test "If either is Nothing return Nothing" <|
+            , test "If either is Nothing return Nothing pt. II" <|
                 \() ->
                     Expect.equal
                         (addMaybes (Just 800) Nothing)
@@ -128,7 +117,8 @@ maybeTests =
 
 resultTests : Test
 resultTests =
-    describe "result tests"
+    describe
+        "result tests"
         [ describe "getMyAge tests"
             [ test "parses an age string correctly" <|
                 \() ->
@@ -164,7 +154,7 @@ resultTests =
                     Expect.equal
                         (combinedAge "28" "blergh")
                         (Err "could not convert string 'blergh' to an Int")
-            , test "returns an Err if either of them are invalid" <|
+            , test "returns an Err if either of them are invalid pt. II" <|
                 \() ->
                     Expect.equal
                         (combinedAge "blergh" "28")
@@ -180,15 +170,3 @@ resultTests =
 tupleFuzzer : Fuzzer (List ( Int, String ))
 tupleFuzzer =
     list <| tuple ( int, string )
-
-
-
--- The two functions below allow the results of the tests to be printed to the terminal
-
-
-main : TestProgram
-main =
-    run emit allTests
-
-
-port emit : ( String, Value ) -> Cmd msg
